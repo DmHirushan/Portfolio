@@ -59,6 +59,11 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+/* .burger-icon{
+    width: 3%;
+    height: 10%;
+} */
+
 .header-text{
     margin-top: 20%;
     font-size: 30px;
@@ -83,7 +88,7 @@ nav ul li a:hover::after{
 .about-me-container{
     padding-top: 20px;
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 50% 50%;
 }
 
 .about-me-paragraph{
@@ -114,13 +119,13 @@ nav ul li a:hover::after{
     border-bottom-right-radius: 30px;
     margin-bottom: 32px;
     margin-left: 20px;
-    width: 500px;
+    width: 470px;
     height: 50px;
     background-color: white;
 }
 
 .horizontal-axis{
-    width: 530px;
+    width: 500px;
     height: 10px;
     background-color: rgb(136, 189, 235);
     border-top-right-radius: 20px;
@@ -134,24 +139,24 @@ nav ul li a:hover::after{
 }
 
 .java-bar{ 
-    width: 480px;
+    width: 450px;
 }
 
 .mysql-bar{
     
-    width: 355px;
+    width: 335px;
 }
 
 .javascript-bar{
-    width: 412px;
+    width: 482px;
 }
 
 .html-bar{
-    width: 472px;
+    width: 442px;
 }
 
 .css-bar{
-    width: 470px;
+    width: 440px;
 }
 
 .bar-text{
@@ -340,4 +345,167 @@ form input, form textarea{
 
 .submit-btn:hover{
     background: aqua;
+}
+
+.container-last-contact{
+    display: none;
+}
+
+.contact-left2{
+    flex-basis: 35%;
+}
+
+.contact-left2 p{
+    margin-top: 30px;
+}
+
+.contact-left2 p i{
+    color: aqua;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+/*Add resposiveness to the site*/
+
+@media screen and (max-width: 1160px){
+    .about-me-container{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .about-me-paragraph{
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 1160px){
+    .row{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .contact-left{
+        display: none;
+    }
+    .container-last-contact{
+        display: flex;
+    }
+    .submit-btn{
+        margin-left: 50vw;
+    }
+}
+
+@media screen and (max-width: 863px) {
+    ul{
+        display: none;
+    }
+    .skill-container{
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 754px){
+    .skill-container{
+        padding-left: 0px;
+    }
+    .header-text h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 614px){
+    .skill-container{
+        padding-left: 40px;
+    }
+    .verticle-axis{
+        background-color: rgb(136, 189, 235);
+        width: 10px;
+        height: 250px;
+        border-top-left-radius: 20px;
+        /* margin-top: -50px; */
+    }
+    
+    .level-bar{
+        /* margin-top: 50px; */
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        width: 320px;
+        height: 30px;
+        background-color: white;
+    }
+    
+    .horizontal-axis{
+        width: 350px;
+        height: 10px;
+        background-color: rgb(136, 189, 235);
+        border-top-right-radius: 20px;
+    }
+    
+    .skill-bar{
+        height: 30px;
+        background-color: rgb(9, 112, 126);
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    
+    .java-bar{ 
+        width: 300px;
+    }
+    
+    .mysql-bar{
+        
+        width: 285px;
+    }
+    
+    .javascript-bar{
+        width: 332px;
+    }
+    
+    .html-bar{
+        width: 292px;
+    }
+    
+    .css-bar{
+        width: 290px;
+    }
+    
+    .bar-text{
+       padding-top: 8px;
+       padding-left: 20px;
+    }
+
+    .bar-text h2{
+        font-size: 14px;
+    }
+
+    .submit-btn{
+        margin-left: 0vw;
+        height: 20px;
+        font-size: 14px;
+    }
+
+    .e-mail{
+        margin-right: 10px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 521px){
+    .skill-container{
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 521px){
+    .skill-container{
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 421px){
+    .skill-container{
+        display: none;
+    }
 }
